@@ -1,0 +1,37 @@
+.site_link {
+  color: $primaryColor;
+  width: fit-content;
+  gap: 10px;
+  margin-inline-start: auto;
+  text-decoration-line: underline;
+  text-decoration-style: double;
+  text-overflow: ellipsis;
+  font-size: 22px;
+  font-weight: 500;
+  border: none;
+  transition: 0.5s;
+
+  @include xs {
+    font-size: 16px;
+  }
+
+  &.with_out_text_line_bottom__ {
+    text-decoration: none;
+  }
+
+  &.white_color__ {
+    color: #fff;
+
+    &:hover {
+      text-decoration: none;
+    }
+  }
+  
+  &:hover {
+    color:$secondaryColor;
+    margin-inline-start: auto;
+    text-decoration-line: underline;
+    text-decoration-style: double;
+  }
+}
+

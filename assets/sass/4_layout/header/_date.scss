@@ -1,0 +1,10 @@
+.date_title__ {
+  color: #fff;
+  font-size: 15px;
+  font-weight: 500;
+  margin: 0;
+
+  @include xs {
+    font-size: 13px;
+  }
+}

@@ -1,0 +1,42 @@
+.header_social_wrapper {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  gap: 10px;
+  margin: 0;
+  padding: 0;
+
+  @include md {
+    flex-direction: column;
+  }
+  
+  @include sm {
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .social_link__ {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 12px;
+    font-weight: 700;
+    color: #fff;
+    
+    @include xxs {
+      font-size: 9px;
+      gap: 2px;
+    }
+
+    .icon__ {
+      background-color: $secondaryColor;
+      width: 20px;
+      height: 20px;
+      padding: 3px;
+      border-radius: 5px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+}

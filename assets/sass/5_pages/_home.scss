@@ -1,0 +1,200 @@
+.home_slider_section {
+  position: relative;
+
+  .slide-inner {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 90vh;
+    z-index: 111;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &:after {
+      position: absolute;
+      content: "";
+      background: rgba(#000, 0.4);
+      width: 100%;
+      height: 100%;
+      z-index: 5;
+    }
+  }
+
+  .slider_content {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 6;
+    max-width: 498px;
+  }
+
+  .slider_title__ {
+    color: #fff;
+    text-align: right;
+    font-family: Tajawal;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin: 0;
+
+    @include sm {
+      font-size: 25px;
+    }
+
+    @include xs {
+      font-size: 18px;
+    }
+
+    &:last-of-type {
+      margin-bottom: 23px;
+    }
+  }
+
+  .slider_parag__ {
+    color: #fff;
+    text-align: right;
+    font-family: Tajawal;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin: 0;
+
+    @include sm {
+      font-size: 18px;
+    }
+
+    @include xs {
+      font-size: 13px;
+    }
+  }
+}
+
+.fatawa_section__ {
+  .fatwa_section_link_wrapper__ {
+    padding: 0 20px;
+    border: 1px solid $primaryColor;
+    border-radius: $secondaryBorderRadius;
+  }
+}
+
+.latest_books_section {
+  .latest_books_cards_wrapper__ {
+    // display: flex;
+    // align-items: center;
+    gap: 75px;
+    row-gap: 30px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+
+    @include sm {
+      grid-template-columns: repeat(3, 1fr);
+    }
+
+    @include xs {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    @include xxs {
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }
+}
+
+.latest_articles_slider {
+  .swiper-slide {
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+    border: 1px solid $primaryColor;
+    border-radius: $secondaryBorderRadius;
+
+    @include sm {
+      flex-direction: column;
+    }
+
+    .img_wrapper__ {
+      min-width: 365px;
+      height: 100%;
+
+      @include sm {
+        min-width: 100%;
+      }
+    }
+
+    .figure__ {
+      padding-bottom: 114.931%;
+      border-radius: 0 $secondaryBorderRadius $secondaryBorderRadius 0;
+      overflow: hidden;
+
+      @include dir {
+        border-radius: $secondaryBorderRadius 0 0 $secondaryBorderRadius;
+      }
+    }
+
+    .description_wrapper__ {
+      padding: 20px;
+      padding-inline-start: 0;
+
+      @include sm {
+        padding: 20px !important;
+      }
+    }
+
+    .head_wrapper__ {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 30px;
+
+      @include xs {
+        margin-bottom: 10px;
+      }
+    }
+
+    .title__ {
+      color: $primaryColor;
+      font-size: 22px;
+      font-weight: 700;
+      margin: 0;
+
+      @include xs {
+        font-size: 18px;
+      }
+    }
+
+    .time__ {
+      color: $primaryColor;
+      font-size: 18px;
+      font-weight: 500;
+
+      @include xs {
+        font-size: 14px;
+      }
+    }
+
+    .parag__ {
+      color: $primaryColor;
+      font-size: 18px;
+      font-weight: 500;
+      margin: 0;
+      line-height: 1.1;
+      max-width: 350px;
+
+      @include sm {
+        max-width: 100%;
+      }
+
+      @include xs {
+        font-size: 14px;
+      }
+    }
+  }
+}

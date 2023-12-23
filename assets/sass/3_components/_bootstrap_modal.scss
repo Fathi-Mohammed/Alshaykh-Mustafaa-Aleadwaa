@@ -1,0 +1,154 @@
+.modal {
+  top: 10vh;
+  overflow: unset !important;
+  
+  @include xs {
+    top: 10vh;
+  }
+
+
+  .modal-content {
+    padding: 26px 50px;
+    border-radius: $secondaryBorderRadius;
+    display: block !important;
+    border: none;
+  }
+}
+
+.modal-backdrop {
+  opacity: 0.3 !important;
+}
+
+
+.modal-dialog {
+  max-width: 490px;
+  margin: 0 auto;
+  height: 80vh;
+  overflow-y: auto;
+
+
+  &.large_width__ {
+    max-width: 899px;
+  }
+}
+
+.modal_block__ {
+  > .figure__ {
+    margin: 0 auto;
+    justify-content: center;
+    margin-bottom: 25px;
+  }
+
+  .textarea-om {
+    margin-bottom: 20px;
+  }
+
+  .title {
+    font-size: 16px;
+    font-weight: 700;
+    margin-bottom: 13px;
+    color: $headingMainColor;
+    display: flex;
+    gap: 10px;
+
+    &.rating_title__ {
+      color: $orangeColor;
+    }
+  }
+
+  .sub_title__ {
+    font-size: 14px;
+    font-weight: 300;
+    margin: 0 auto;
+    margin-bottom: 10px;
+    line-height: 20px;
+    text-align: start;
+    color: $paragraphFourthColor;
+  }
+
+  .modal_form__ {
+    margin-top: 30px;
+  }
+
+  .points__ {
+    font-size: 14px;
+    font-weight: 800;
+    color: $headingMainColor;
+    margin: 0;
+    margin-bottom: 15px;
+
+    span {
+      display: block;
+      font-size: 38px;
+    }
+  }
+
+  .price__ {
+    padding: 7px 15px;
+  }
+
+  .parag_head__ {
+    font-size: 17px;
+    font-weight: 700;
+    text-transform: capitalize;
+    color: $headingMainColor;
+    text-align: start;
+    margin-inline-start: 12px;
+    margin-bottom: 15px;
+  }
+
+  .parag__ {
+    font-size: 14px;
+    font-weight: 400;
+    text-transform: capitalize;
+    color: $paragraphFourthColor;
+    text-align: start;
+    margin-bottom: 15px;
+
+    &.with_border {
+      padding-bottom: 20px;
+      border-bottom: 1px solid $borderColor;
+    }
+  }
+
+  .close_modal_button {
+    // position: absolute;
+    // top: -22.5px;
+    // left: 50%;
+    // transform: translateX(-50%);
+    // width: 45px;
+    // height: 45px;
+    // border-radius: 50%;
+    // border: 3px solid #B7BAC3;
+    // background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    gap: 5px;
+    font-size: 12px;
+    font-weight: 400;
+    color: $paragraphMainColor;
+    // margin: 25px auto 0;
+    margin-inline-start: auto;
+
+    .figure__ {
+      margin: 0;
+    }
+
+    &:focus {
+      outline: none;
+    }
+  }
+
+  .submit-button__ {
+    margin-top: 20px;
+  }
+}
+
+.delete_modal {
+  .figure__ {
+    width: 25px;
+    height: 27.5px;
+  }
+}

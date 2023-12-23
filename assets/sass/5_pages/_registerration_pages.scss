@@ -1,0 +1,369 @@
+.registeration_title {
+  text-align: start;
+  color: $primaryColor;
+  font-size: 20px;
+  font-weight: 700;
+  margin: 0;
+  margin-bottom: 12px !important;
+
+  &.center__ {
+    text-align: center;
+    margin: 0 auto;
+  }
+}
+
+.registeration_sub_title {
+  font-size: 16px;
+  font-weight: 500;
+  color: $paragraphMainColor;
+  margin-bottom: 27px;
+
+  &.center__ {
+    text-align: center;
+  }
+}
+
+.form_section_head {
+  font-size: 12px;
+  font-weight: 500;
+  color: $primaryColor;
+  margin-bottom: 23px;
+}
+
+.second_registration_title__ {
+  text-align: center;
+  font-size: 13px;
+  font-weight: 400;
+  color: $paragraphFifthColor;
+  margin-bottom: 10px;
+  margin-top: 35px;
+}
+
+.forget_password_link__ {
+  color: $headingMainColor;
+  display: flex;
+  height: 100%;
+  margin-bottom: 15px;
+  margin-top: 10px;
+  color: $paragraphMainColor;
+  width: fit-content;
+  gap: 8px;
+  font-size: 18px;
+  font-weight: 500;
+  transition: 0.5s;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+.form_label_for_info__ {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+
+  .head__,
+  .link__ {
+    font-size: 15px;
+    color: $headingSecondaryColor;
+    margin-bottom: 0;
+
+    @include xxs {
+      font-size: 10px;
+    }
+  }
+
+  .link__ {
+    color: $thirdColor;
+    font-weight: 700;
+    font-size: 14px;
+    transition: 0.5s;
+    margin-inline-start: 2px;
+    text-decoration: underline;
+
+    @include xxs {
+      font-size: 10px;
+    }
+
+    &:hover {
+      color: $primaryColor;
+    }
+  }
+
+  // &.border_wrapper__ {
+  //   border: 1px solid $primaryColor;
+  //   border-radius: $mainBorderRadius;
+  //   padding: 20px 10px;
+  //   height: 67px;
+  //   color: $headingMainColor;
+
+  //   .link__ {
+  //     color: $headingMainColor !important;
+  //   }
+
+  //   &:hover {
+  //     text-decoration: none;
+  //   }
+  // }
+}
+
+.form_label_for_info_group__ {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.registeration_page__ {
+  padding-top: 50px;
+  padding-bottom: 50px;
+
+  @include sm {
+    padding: 25px 0;
+  }
+}
+
+.register_figure__ {
+  margin-bottom: 25px;
+}
+
+.code_shapes__ {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  direction: ltr;
+  position: relative;
+  // max-width: fit-content;
+  margin: 0 auto;
+  margin-bottom: 26px;
+  gap: 10px;
+
+  @include xxs {
+    gap: 5px;
+  }
+
+  .code-input {
+    text-align: center;
+    width: 53px;
+    height: 46px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid $primaryColor;
+    border-radius: $secondaryBorderRadius !important;
+    background-color: #fff;
+    border-radius: 28px;
+    font-size: 16px;
+    color: #fff;
+    outline: none;
+    margin: 0;
+    font-weight: 500;
+    transition: 0.5s;
+
+    @include xxs {
+      width: calc(20% - 4px);
+    }
+
+    &.active {
+      font-weight: 600;
+      border-color: $headingMainColor;
+      color: $headingMainColor;
+    }
+
+    &::placeholder {
+      color: $placeholderColor;
+      font-weight: 300;
+      font-size: 20px;
+    }
+  }
+}
+
+.verification_timer_wrapper__ {
+  margin-top: 38px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .title__ {
+    font-size: 13px;
+    font-weight: 400;
+    color: $paragraphFifthColor;
+    margin-bottom: 16px;
+    text-align: center;
+  }
+
+  .timer__ {
+    text-align: center;
+    font-size: 16px;
+    font-weight: 400;
+    color: $secondaryColor;
+    direction: ltr;
+  }
+}
+
+.timer_progress_wrapper {
+  background-color: rgba($secondaryColor, 0.23);
+  border-radius: 10px;
+  height: 3px;
+  width: 56px;
+  margin-top: 11px;
+  margin-bottom: 30px;
+  position: relative;
+
+  .progress__ {
+    position: absolute;
+    height: 100%;
+    top: 0;
+    inset-inline-start: 0;
+    border-radius: 10px;
+    background-color: $secondaryColor;
+  }
+}
+
+.register_link_title__ {
+  font-size: 16px;
+  font-weight: 700;
+  color: $paragraphMainColor;
+  text-align: center;
+  margin: 27px 0;
+}
+
+.plan_steps_wrapper__ {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  padding: 0;
+  margin-bottom: 100px;
+
+  @include xs {
+    padding: 0 15px;
+  }
+
+  .step_link__ {
+    width: 108px;
+    height: 108px;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    position: relative;
+    z-index: 2;
+
+    @include xs {
+      width: 54px;
+      height: 54px;
+    }
+
+    @include xxs {
+      width: 46px;
+      height: 46px;
+    }
+
+    .icon__ {
+      @include xs {
+        transform: scale(0.5);
+      }
+    }
+
+    &::after {
+      content: attr(title_data);
+      position: absolute;
+      top: calc(100% + 10px);
+      width: 100%;
+      text-align: center;
+      font-size: 16;
+      font-weight: 700;
+      color: $headingMainColor;
+
+      @include xs {
+        font-size: 10px;
+      }
+
+      @media only screen and (max-width: 380px) {
+        font-size: 6px;
+      }
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      background-color: rgba($primaryColor, 0.06);
+      width: 100%;
+      height: 100%;
+      border-radius: 50%;
+    }
+
+    &.active {
+      background-color: rgba($primaryColor, 1);
+
+      .icon__ {
+        filter: brightness(0) invert(1);
+      }
+    }
+  }
+
+  &::after {
+    content: "";
+    height: 3px;
+    width: 100%;
+    background: rgba($primaryColor, 0.2);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    @include xs {
+      width: 80%;
+    }
+  }
+
+  &.second_step__ {
+    &::after {
+      background: linear-gradient(
+        to left,
+        $primaryColor 0% 25%,
+        rgba($primaryColor, 0.2) 20% 100%
+      );
+    }
+  }
+
+  &.third_step__ {
+    &::after {
+      background: linear-gradient(
+        to left,
+        $primaryColor 0% 50%,
+        rgba($primaryColor, 0.2) 50% 100%
+      );
+    }
+  }
+
+  &.fourth_step__ {
+    &::after {
+      background: linear-gradient(
+        to left,
+        $primaryColor 0% 75%,
+        rgba($primaryColor, 0.2) 75% 100%
+      );
+    }
+  }
+
+  &.last_step__ {
+    &::after {
+      background: linear-gradient(to left, $primaryColor 0% 100%);
+    }
+  }
+}
+
+.timer_wrapper__ {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  .timer__ {
+    direction: ltr;
+  }
+}

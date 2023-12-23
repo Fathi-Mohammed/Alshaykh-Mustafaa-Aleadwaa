@@ -1,0 +1,151 @@
+// #calendar {
+//   .ui-datepicker {
+//     border: 0 !important;
+//     position: relative;
+//     min-width: 100%;
+//   }
+
+//   .ui-datepicker-header {
+//     position: relative;
+//     border: 0 !important;
+//     display: flex;
+//     align-items: center;
+//     justify-content: center;
+//     background-color: rgba($primaryColor , 0.07);
+//     padding: 18px 45px;
+
+//     .ui-datepicker-prev,
+//     .ui-datepicker-next {
+//       content: '';
+//       position: absolute;
+//       top: 50%;
+//       inset-inline-end: 47px;
+//       transform: translateY(-50%);
+//       padding: 0;
+//       border-radius: 50%;
+//       width: 29px;
+//       height: 29px;
+//       background: transparent;
+//       border: 1px solid $primaryColor;
+//       cursor: pointer;
+      
+//       &::after {
+//         position: absolute;
+//         content: '\f053';
+//         color: $primaryColor;
+//         font-family: "Font Awesome 6 Free";
+//         font-weight: 900;
+//         top: 50%;
+//         left: 50%;
+//         transform: translate(-50%,-50%);
+//         width: 100%;
+//         height: 100%;
+//         display: flex;
+//         align-items: center;
+//         justify-content: center;
+//       }
+//     }
+    
+//     .ui-datepicker-next {
+//       inset-inline-end: unset;
+//       inset-inline-start: 47px !important;
+//       background-color: $primaryColor;
+      
+//       &::after {
+//         content: '\f054';
+//         color: #fff;
+//       }
+//     }
+
+//     .ui-datepicker-title {
+//       font-size: 21px;
+//       font-weight: 700;
+//       color: $headingMainColor;
+//     }
+//   }
+
+
+//   .ui-datepicker-calendar {
+//     thead {
+//       border: 0 !important;
+//       tr {
+//         th {
+//           span {
+//             font-size: 12px;
+//             font-weight: 400;
+//             color: $paragraphMainColor;
+
+//           }
+    
+//         }
+//       }
+//     }
+//     .ui-state-default {
+//       font-size: 16px;
+//       font-weight: 400;
+//       color: $headingMainColor;
+//       width: 80px;
+//       height: 80px;
+//     }
+    
+//     .ui-state-active {
+//       background-color: $primaryColor;
+//       color: #fff;
+//       font-size: 23px;
+//       font-weight: 700;
+//     }
+//   }
+
+
+// }
+
+// .fc-header-toolbar {
+
+// }
+
+
+
+
+// .fc-today {
+//   background-color: transparent !important;
+//   border-style: none !important;
+// }
+
+// // .fc-content-skeleton {
+// //   height: 100%;
+// //   display: flex;
+// //   align-items: center;
+// // }
+
+// // .fc-day-grid {
+// //   overflow: hidden;
+// // }
+
+// .fc-day-number {
+//   // width: 100%;
+//   text-align: center;
+//   color: $headingMainColor;
+//   // position: absolute;
+//   // background-color: #555;
+//   // width: 100%;
+//   // height: 100%;
+
+// }
+
+
+// // .fc-highlight {
+// //   background-color: $primaryColor !important;
+// //   opacity: 1 !important;
+// //   border-radius: 10px;
+// //   box-shadow: $mainShadowColor;
+// // }
+// .selected-day {
+//   color: #fff !important;
+// }
+
+// .fc-highlight-skeleton {
+//   .fc-highlight {
+//     background-color: $primaryColor;
+//     opacity: 1;
+//   }
+// }

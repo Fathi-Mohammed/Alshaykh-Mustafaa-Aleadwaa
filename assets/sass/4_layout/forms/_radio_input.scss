@@ -1,0 +1,365 @@
+// .radio-om {
+//     cursor          : pointer;
+//     margin          : 0;
+//     padding         : 0;
+//     width           : 16px;
+//     height          : 16px;
+//     background-color: #fff;
+//     border          : 1px solid #e8e8e8;
+//     opacity         : 0.4;
+
+//     &:checked {
+//         opacity: 1;
+//     }
+// }
+
+.radio-group-om {
+  display: flex;
+  align-items: center;
+
+  &.margin_bottom_not_for_last_one {
+    &:not(:last-child) {
+      margin-bottom: 30px;
+    }
+  }
+
+  &.none_margin_sm__ {
+    @include sm {
+      margin: 0 !important;
+    }
+  }
+
+  .radio-om {
+    opacity: 0 !important;
+    visibility: hidden !important;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+
+    &:checked { 
+      + .radio-label-om {
+        border-color: $secondaryColor;
+        background-image: url(../images/check.svg);
+      }
+
+      ~ .chose_plane_radio_wrapper__ {
+        background-color: $thirdColor;
+        border-color: $thirdColor;
+        color: $secondaryColor;
+      }
+
+      ~ .customize_your_plan_radio_wrapper__ {
+        background-color: rgba($primaryColor, 0.05);
+        border-color: transparent;
+
+        .title__ {
+          color: $primaryColor;
+        }
+
+        .icon__ {
+          filter: unset;
+        }
+
+        .price__ {
+          color: $primaryColor;
+        }
+
+        .check_shape__ {
+          background-color: $primaryColor;
+          border-color: $primaryColor;
+          position: relative;
+
+          &::before {
+            opacity: 1;
+          }
+        }
+      }
+
+      + .radio_label_button__ {
+        background-color: $secondaryColor;
+        color: #fff;
+
+        .icon__ {
+          filter: brightness(0) invert(1);
+        }
+
+        &.mada_button__ {
+          gap: 5px;
+
+          .icon__ {
+            filter: unset;
+            background-color: #fff;
+            border-radius: $secondaryBorderRadius;
+          }
+        }
+      }
+    }
+  }
+
+  .radio-label-om {
+    cursor: pointer;
+    margin: 0;
+    padding: 0;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    background-color: transparent;
+    border: 2px solid #86959f;
+    background-position: center center;
+    background-size: 10px;
+    background-repeat: no-repeat;
+  }
+
+  .text_ {
+    margin: 0;
+    font-size: 15px;
+    margin-inline-start: 5px;
+    cursor: pointer;
+    color: $headingMainColor;
+  }
+
+  .check_shape__ {
+    width: 34px;
+    height: 34px;
+    background-color: transparent;
+    border: 1px solid #bdbdbd;
+    border-radius: 50%;
+    margin-inline-start: auto;
+    transition: 0.5s;
+    flex-shrink: 0;
+    
+    &::before {
+      content: "\f00c";
+      font-family: "Font Awesome 6 Free";
+      font-weight: 900;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: #fff;
+      opacity: 0;
+    }
+
+    &.small_size__ {
+      width: 23px;
+      height: 23px;
+
+      &::before {
+        font-size: 12px;
+      }
+    }
+
+    &.none_margin__ {
+      margin: 0;
+    }
+
+    &.with_inline_end_margin {
+      margin-inline-end: 12px;
+    }
+  }
+
+  .radio_label_button__ {
+    background-color: rgba($secondaryColor, 0.12);
+    width: 100%;
+    height: 55px;
+    padding: 20px 15px;
+    border-radius: $secondaryBorderRadius;
+    color: $paragraphMainColor;
+    font-size: 12px;
+    font-weight: 300;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    cursor: pointer;
+    transition: 0.5s;
+
+    @include md {
+      flex-direction: column;
+      height: 108px;
+    }
+
+    @include sm {
+      flex-direction: row;
+      height: 55px;
+    }
+
+    @include xs {
+      flex-direction: column;
+      height: 108px;
+      font-size: 9px;
+    }
+
+    .icon__ {
+      padding: 10px;
+      margin: 0 !important;
+      transition: 0.5s;
+    }
+  }
+
+  .chose_plane_radio_wrapper__ {
+    border: none;
+    height: 63px;
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: capitalize;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    border-radius: $mainBorderRadius;
+    color: $headingMainColor;
+    background-color: $secondaryColor;
+    min-width: 100%;
+    border: 1px solid $borderColor;
+    cursor: pointer;
+    transition: 0.5s;
+
+    @include xs {
+      width: fit-content;
+      width: 100%;
+    }
+
+    &:hover {
+      border: 1px solid $borderColor;
+      background-color: rgba($thirdColor, 0.05);
+    }
+  }
+
+  .customize_your_plan_radio_wrapper__ {
+    display: flex;
+    align-items: center;
+    padding: 33px 55px 43px 51px;
+    background-color: rgba($secondGreyColor, 0.08);
+    width: 100%;
+    border-radius: $fourthBorderRadius;
+    cursor: pointer;
+    transition: 0.5s;
+
+    .icon__ {
+      margin-inline-end: 38px;
+      width: 54px;
+      min-width: 54px;
+      max-width: 54px;
+
+      &.with_margin_bottom__ {
+        margin-bottom: 10px;
+      }
+
+      &.small_size_icon__ {
+        width: 24px;
+        min-width: 24px;
+        max-width: 24px;
+      }
+    }
+
+    .title__ {
+      font-size: 16px;
+      font-weight: 700;
+      color: $headingMainColor;
+      margin-bottom: 10px;
+      transition: 0.5s;
+
+      &.none_margin__ {
+        margin: 0;
+      }
+    }
+
+    .parag__ {
+      font-size: 14px;
+      font-weight: 400;
+      margin: 0;
+      color: $paragraphMainColor;
+    }
+
+    .price__ {
+      color: $headingMainColor;
+    }
+
+    &.select_subscription_days_number_radio_input_label__ {
+      padding: 20px 27px;
+      margin: 0 !important;
+
+      .icon__ {
+        filter: grayscale(1);
+      }
+
+      .title__ {
+        font-weight: 700;
+        color: $paragraphMainColor;
+      }
+    }
+
+    &.need_additions_or_not_radio_input_label__ {
+      padding: 20px 27px;
+      background-color: #fff;
+      border: 1px solid $borderColor;
+      .icon__ {
+        filter: grayscale(1);
+      }
+
+      .title__ {
+        font-weight: 700;
+        color: $paragraphMainColor;
+      }
+    }
+
+    &.additions_radio_label__ {
+      padding: 17px 32px;
+      border-radius: $secondaryBorderRadius;
+    }
+  }
+
+
+
+}
+
+
+
+
+// ########################################################################
+.customer_evaluation_icon_wrapper {
+  .rating-group {
+    display: inline-flex;
+    gap: 8px;
+    margin: 0;
+    margin-inline-end: 35px;
+    margin-bottom: 15px;
+  }
+
+  .rating__icon {
+    pointer-events: none;
+  }
+
+  .rating__input {
+    // position: absolute !important;
+    // left: -9999px !important;
+    display: none;
+  }
+
+  .rating__input--none {
+    display: none;
+  }
+
+  .rating__label {
+    cursor: pointer;
+    font-size: 24px;
+  }
+
+  .rating__icon--star {
+    color: orange;
+  }
+
+  .rating__input:checked ~ .rating__label .rating__icon--star {
+    color: #D2D4D5;
+  }
+
+  .rating-group:hover .rating__label .rating__icon--star {
+    color: orange;
+  }
+
+  .rating__input:hover ~ .rating__label .rating__icon--star {
+    color: #D2D4D5;
+  }
+}

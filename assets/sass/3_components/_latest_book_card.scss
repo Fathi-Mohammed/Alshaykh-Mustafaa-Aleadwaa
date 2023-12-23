@@ -1,0 +1,53 @@
+.latest_book_card__ {
+  border-radius: $secondaryBorderRadius;
+  border: 1px solid $primaryColor;
+  display: flex;
+  flex-direction: column;
+  max-width: 243px;
+
+  @include xs {
+    max-width: 100%;
+    min-width: 100%;
+  }
+
+  @include xs {
+    min-width: 100%;
+  }
+
+  .figure__ {
+    padding-bottom: 102.88%;
+    border-radius: $secondaryBorderRadius;
+    overflow: hidden;
+  }
+
+  .description_wrapper__ {
+    padding: 26px 10px 36px;
+  }
+
+  .title__ {
+    color: $primaryColor;
+    font-size: 22px;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 24px;
+    transition: 0.5s;
+  }
+  
+  .parag__ {
+    color: $primaryColor;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 500;
+    margin: 0;
+  }
+
+  &:hover {
+    .img-om {
+      transform: scale(1.1);
+    }
+
+    .title__ {
+      color: $secondaryColor;
+    }
+  }
+}

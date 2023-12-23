@@ -1,0 +1,159 @@
+.payment_booking_page {
+  .points_wrapper {
+    background-color: rgba($thirdColor , 0.07);
+    display: flex;
+    align-items: center;
+    padding: 20px 25px;
+    border-radius: $secondaryBorderRadius;
+    margin-bottom: 30px;
+
+    @include xs {
+      flex-direction: column;
+      text-align: center;
+      gap: 10px;
+    }
+
+    .icon__ {
+      max-width: 48px;
+      max-height: 48px;
+      margin-inline-end: 8px;
+    }
+
+    .title__ {
+      font-size: 12px;
+      font-weight: 300;
+      color: $paragraphMainColor;
+    }
+
+    .points__ {
+      font-size: 16px;
+      font-weight: 400;
+    }
+
+    .points_number__ {
+      font-size: 25px;
+      font-weight: 700;
+    }
+  }
+
+  .section_block_wrapper__ {
+    padding: 0 ;
+  }
+
+  .deascription_wrapper__ {
+    padding: 40px 42px 35px;
+    border-bottom: 3px solid rgba($secondaryColor , 0.12);
+    margin-bottom: 35px;
+  }
+  
+  .payment_description__ {
+    padding: 0 42px 35px;
+
+    .section_block_title {
+      margin-bottom: 20px;
+    }
+  }
+
+  .payment_data_wrapper__ {
+    // display: grid;
+    // grid-template-columns: repeat(4,1fr);
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 35px;
+
+    @include xs {
+      flex-wrap: wrap;
+    }
+  }
+
+  .payment_data {
+    width: calc(100% / 4 - 27px);
+    
+    @include xs {
+      width: calc(100% / 2 - 18px);
+    }
+  }
+}
+
+.request_info_wrapper {
+  .figure__ {
+    padding-bottom: 70%;
+    border-radius: $thirdBorderRadius;
+    overflow: hidden;
+  }
+
+  .title__ {
+    font-size: 12px;
+    font-weight: 700;
+    margin-bottom: 16px;
+    color: $headingMainColor;
+    text-transform: capitalize;
+  }
+
+  .parag__ {
+    font-size: 10px;
+    font-weight: 300;
+    color: $paragraphMainColor;
+    margin: 0;
+    line-height: 18px;
+  }
+}
+
+.car_info_wrapper {
+  .car_info_title__ {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 14px;
+    font-weight: 300;
+    color: $paragraphMainColor;
+    margin-bottom: 7px;
+
+
+    &::before {
+      content: url(../images/shapes/car_info_title_icon.svg);
+    }
+  }
+
+  .car_info_sub_title__ {
+    font-size: 14px;
+    font-weight: 300;
+    color: $headingMainColor;
+    margin: 0;
+  }
+}
+
+.payment_data {
+
+  .payment_title__ {
+    text-align: center;
+    font-size: 11px;
+    font-weight: 300;
+    color: $paragraphMainColor;
+    margin-bottom: 15px;
+  }
+  
+  .price__ {
+    text-align: center;
+    font-size: 16px;
+    font-weight: 500;
+    color: $headingMainColor;
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+    width: 100%;
+  }
+
+  &.total_price {
+    .price__ {
+      font-size: 25px;
+      font-weight: 700;
+    }
+    .currency__ {
+      font-size: 16px;
+      font-weight: 500;
+    }
+  }
+}

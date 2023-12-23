@@ -1,0 +1,26 @@
+
+.about_the_shaykh_tabs_page {
+  .parag_wrapper__ {
+    border: 1px solid $primaryColor;
+    border-radius: $mainBorderRadius;
+    padding: 30px;
+    margin-bottom: 36px;
+  }
+
+  .parag__ {
+    color: $headingSecondaryColor;
+    font-size: 22px;
+    font-weight: 500;
+    line-height: 30px;
+    margin: 0;
+
+    @include xs {
+      font-size: 14px;
+    }
+
+    &:not(:last-child) {
+      margin-bottom: 20px;
+    }
+  }
+
+}

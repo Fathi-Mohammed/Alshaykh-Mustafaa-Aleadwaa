@@ -1,0 +1,19 @@
+.header_logo__ {
+  width: 223px;
+  min-width: 223px;
+  
+  @include xs {
+    width: 153px;
+    min-width: 153px;
+    
+  }
+
+  .figure__ {
+    width: 100%;
+  }
+
+  img {
+    width: 100%;
+    object-fit: contain;
+  }
+}

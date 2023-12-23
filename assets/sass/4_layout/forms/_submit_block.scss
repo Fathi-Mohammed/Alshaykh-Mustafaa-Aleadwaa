@@ -1,0 +1,162 @@
+.submit-button__ {
+  color: #fff;
+  background: $primaryColor;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 500;
+  transition: 0.5s;
+  margin-bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  outline: none;
+  padding: 0 30px;
+  height: 40px;
+  width: max-content;
+  border-radius: $mainBorderRadius;
+  min-width: 134px;
+  gap: 10px;
+
+  .icon__ {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    margin: 0;
+    transition: 0.5s;
+  }
+
+  &:hover {
+    background-color: rgba($primaryColor, 0.9);
+    text-decoration: none;
+    color: #fff;
+  }
+
+  &:focus {
+    border: none;
+    outline: none;
+  }
+
+  &:disabled {
+    background-color: $mainBackgroundColor;
+  }
+
+  &.centered__ {
+    margin: 0 auto;
+    min-width: 218px;
+  }
+
+  &.full_width_small_screen_only {
+    @include xs {
+      width: 100%;
+      min-width: 100%;
+    }
+  }
+
+  &.full_width__ {
+    width: 100%;
+    min-width: 100%;
+  }
+
+  &.fixed_size__ {
+    width: 268px;
+
+    @include sm {
+      width: 100%;
+    }
+  }
+
+  &.full_width_sm__ {
+    @include sm {
+      min-width: 100%;
+      width: 100%;
+    }
+  }
+
+  &.half_width__ {
+    width: 50%;
+    min-width: 50%;
+
+    @include sm {
+      width: 100%;
+      min-width: 100%;
+    }
+  }
+
+  &.auto_margin_inline_start__ {
+    margin-inline-start: auto;
+  }
+
+  &.registeration_second_button__ {
+    background-color: #fff;
+    border: 1px solid $primaryColor;
+    color: $primaryColor;
+  }
+
+  &.fatwa_request_button__ {
+    width: fit-content;
+    padding: 0;
+    font-size: 22px;
+    font-weight: 500;
+    color: #fff;
+    border-radius: 0;
+    padding-inline-end: 15px;
+    margin-inline-end: 15px;
+    border-left: 1px solid #fff;
+
+    @include xs {
+      font-size: 16px;
+      gap: 5px;
+      height: 30px;
+    }
+
+    .icon__ {
+      width: 20px;
+      height: 20px;
+      background-color: #fff;
+      border-radius: 50%;
+      padding: 4px;
+
+      @include xs {
+        transform: scale(0.65);
+      }
+    }
+
+    @include dir {
+      border: 0;
+      border-right: 1px solid #fff;
+    }
+
+    &.none_border__ {
+      border: 0;
+      padding: 0;
+    }
+
+    &:hover {
+      color: $secondaryColor;
+
+      .icon__ {
+        background-color: $secondaryColor;
+      }
+    }
+  }
+
+  &.news_mail_button__ {
+    background-color: #fff;
+    width: 100%;
+    border-radius: $secondaryBorderRadius;
+    color: $primaryColor;
+
+    &:hover {
+      background-color: rgba(#fff, 0.9);
+    }
+  }
+
+  &.articles_card_button__ {
+    margin: 0 auto;
+    height: 43px;
+    font-size: 18px;
+    font-weight: 500;
+  }
+}

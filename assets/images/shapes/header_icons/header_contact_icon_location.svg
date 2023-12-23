@@ -1,0 +1,9 @@
+<svg id="location_twotone" data-name="location/twotone" xmlns="http://www.w3.org/2000/svg" width="15.022" height="15.022" viewBox="0 0 15.022 15.022">
+  <g id="location">
+    <g id="location-2" data-name="location">
+      <path id="Vector" d="M3.906,1.953A1.953,1.953,0,1,1,1.953,0,1.953,1.953,0,0,1,3.906,1.953Z" transform="translate(5.558 4.5)" fill="none" stroke="#0061b2" stroke-width="0.8"/>
+      <path id="Vector-2" data-name="Vector" d="M.152,4.062c1.233-5.42,9.263-5.414,10.49.006.72,3.18-1.258,5.871-2.992,7.536a3.251,3.251,0,0,1-4.513,0C1.41,9.939-.568,7.242.152,4.062Z" transform="translate(2.114 1.252)" fill="none" stroke="#0061b2" stroke-width="0.8"/>
+      <path id="Vector-3" data-name="Vector" d="M0,0H15.022V15.022H0Z" transform="translate(15.022 15.022) rotate(180)" fill="none" opacity="0"/>
+    </g>
+  </g>
+</svg>

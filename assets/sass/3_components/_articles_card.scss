@@ -1,0 +1,62 @@
+.articles_card__ {
+  border-radius: $secondaryBorderRadius;
+  border: 1px solid $primaryColor;
+  display: flex;
+  flex-direction: column;
+  max-width: 346px;
+
+  @include xs {
+    min-width: 100%;
+  }
+
+  .figure__ {
+    padding-bottom: 72.254%;
+    border-radius: $secondaryBorderRadius;
+    overflow: hidden;
+  }
+
+  .description_wrapper__ {
+    padding: 14px 10px;
+  }
+
+  .head_wrapper__ {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+
+  .title__ {
+    color: $primaryColor;
+    font-size: 22px;
+    font-weight: 700;
+    text-align: center;
+    margin: 0;
+    transition: 0.5s;
+  }
+
+  .date__ {
+    color: $primaryColor;
+    font-size: 22px;
+    font-weight: 500;
+    text-align: center;
+    transition: 0.5s;
+  }
+
+  .parag__ {
+    color: $primaryColor;
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 20px;
+  }
+
+  &:hover {
+    .img-om {
+      transform: scale(1.1);
+    }
+
+    .title__ {
+      color: $secondaryColor;
+    }
+  }
+}

@@ -1,0 +1,136 @@
+// .checkbox-om {
+//     cursor          : pointer;
+//     margin          : 0;
+//     padding         : 0;
+//     width           : 16px;
+//     height          : 16px;
+//     background-color: #fff;
+//     border          : 1px solid #e8e8e8;
+//     opacity         : 0.4;
+
+//     &:checked {
+//         opacity: 1;
+//     }
+// }
+
+.checkbox-group-om {
+  display: flex;
+  cursor: pointer;
+  position: relative;
+
+  .checkbox-om {
+    opacity: 0 !important;
+    visibility: hidden !important;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+
+    &:checked {
+      +.checkbox-label-om {
+        // border-color: $secondaryColor;
+        // background-image: url(../images/shapes/checkbox.png);
+        background-color: $primaryColor;
+        border: 1px solid transparent;
+
+        &:after {
+          opacity: 1;
+        }
+      }
+
+      ~.dish_card__ {
+        border: 1px solid red;
+      }
+    }
+  }
+
+  .checkbox-label-om {
+    cursor: pointer;
+    margin: 0;
+    padding: 0;
+    width: 20px;
+    height: 20px;
+    background-color: #fff;
+    border: 1px solid #BFBFBF;
+    background-position: center center;
+    background-repeat: no-repeat;
+    margin-inline-end: 10px;
+    border-radius: 50%;
+    flex-shrink: 0;
+    position: relative;
+    transition: 0.5s;
+
+    &.second_border_radius {
+      border-radius: 6px;
+    }
+
+    &.dish_card_label__ {
+      position: absolute;
+      top: 23px;
+      inset-inline-end: 10px;
+      z-index: 100;
+    }
+
+    &::after {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%,-50%);
+      content: "\f00c" !important;
+      font-family: "Font Awesome 6 Free";
+      font-weight: 900;
+      font-size: 16px;
+      color: #fff;
+      opacity: 0;
+      transition: 0.5s;
+      
+    }
+  }
+
+  .dish_card__ {
+    cursor: pointer;
+    width: 100%;
+  }
+
+  .label__ {
+    font-size: 14px;
+    font-weight: 300;
+    margin: 0;
+    color: $headingMainColor;
+    cursor: pointer;
+
+    @include xs {
+      font-size: 12px;
+    }
+  }
+  
+  .shape_head_wraper__ {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+  }
+
+  .title__ {
+    font-size: 16px;
+    font-weight: 700;
+    color: $headingMainColor;
+  }
+
+  .sub_title__ {
+    font-size: 12px;
+    font-weight: 400;
+    color: $paragraphMainColor;
+    line-height: 18px;
+    margin: 0;
+    margin-top: 7px;
+  }
+
+  &.none_flex__ {
+    display: unset;
+  }
+
+  &.fixed_width__ {
+    display: inline-block;
+    width: 151px !important;
+  }
+}

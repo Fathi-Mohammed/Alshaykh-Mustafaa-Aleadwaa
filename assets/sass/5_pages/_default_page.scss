@@ -1,0 +1,87 @@
+.default_page__ {
+  position: relative;
+  padding-bottom: 30px;
+
+  &::after {
+    content: url(../images/shapes/page_background.png);
+    position: absolute;
+    top: 0;
+    inset-inline-start: 0;
+  }
+}
+
+// section defaults
+.default_section__ {
+  padding: 0;
+  padding-top: 42px;
+
+  @include sm {
+    padding-top: 30px;
+  }
+
+  @include xs {
+    padding-top: 20px;
+  }
+
+  &:last-of-type{
+    padding-bottom: 50px;
+    
+    @include sm {
+      padding-bottom: 30px;
+    }
+    
+    @include xs {
+      padding-bottom: 20px;
+    }
+  }
+}
+
+
+.row_modify {
+  display: flex;
+  align-items: center;
+
+  @include md {
+    justify-content: center;
+  }
+
+  &.with_row_gap {
+    row-gap: 30px;
+    
+    @include xs {
+      row-gap: 15px;
+    }
+  }
+
+  &.with_second_row_gap {
+    row-gap: 50px;
+  }
+  
+  &.with_margin {
+    margin-bottom: 30px;
+  }
+  
+  &.reverse_dir_column_small_size {
+    @include sm {
+      gap: 20px;
+      flex-direction: column-reverse;
+    }
+  }
+
+  &.justify_between__ {
+    justify-content: space-between;
+  }
+}
+
+.col_start__ {
+  align-self: flex-start;
+}
+
+.col_center__ {
+  align-items: center;
+}
+
+.col_flex {
+  display: flex;
+}
+

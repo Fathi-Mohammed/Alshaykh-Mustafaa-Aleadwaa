@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="17.7" height="20.7" viewBox="0 0 17.7 20.7">
+  <g id="Group_1" data-name="Group 1" transform="translate(-3.15 -1.9)">
+    <path id="Path_1" data-name="Path 1" d="M12,2A5.75,5.75,0,0,0,6.25,7.75v3A5.75,5.75,0,0,0,17.7,11.5H13A.75.75,0,0,1,13,10h4.75V8.5H13A.75.75,0,0,1,13,7h4.7A5.751,5.751,0,0,0,12,2Z" fill="#00294f"/>
+    <path id="Path_2" data-name="Path 2" d="M4,9a.75.75,0,0,1,.75.75v1a7.25,7.25,0,0,0,14.5,0v-1a.75.75,0,0,1,1.5,0v1a8.751,8.751,0,0,1-8,8.718V21.75a.75.75,0,0,1-1.5,0V19.468a8.751,8.751,0,0,1-8-8.718v-1A.75.75,0,0,1,4,9Z" fill="#00294f" fill-rule="evenodd"/>
+    <path id="Path_3" data-name="Path 3" d="M12,2A5.75,5.75,0,0,0,6.25,7.75v3A5.75,5.75,0,0,0,17.7,11.5H13A.75.75,0,0,1,13,10h4.75V8.5H13A.75.75,0,0,1,13,7h4.7A5.751,5.751,0,0,0,12,2Z" fill="none" stroke="#fff" stroke-linecap="round" stroke-width="0.2"/>
+    <path id="Path_4" data-name="Path 4" d="M4,9a.75.75,0,0,1,.75.75v1a7.25,7.25,0,0,0,14.5,0v-1a.75.75,0,0,1,1.5,0v1a8.751,8.751,0,0,1-8,8.718V21.75a.75.75,0,0,1-1.5,0V19.468a8.751,8.751,0,0,1-8-8.718v-1A.75.75,0,0,1,4,9Z" fill="none" stroke="#fff" stroke-linecap="round" stroke-width="0.2" fill-rule="evenodd"/>
+  </g>
+</svg>

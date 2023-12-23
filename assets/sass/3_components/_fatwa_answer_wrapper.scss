@@ -1,0 +1,26 @@
+.fatwa_answer_wrapper__ {
+  border: 1px solid $primaryColor;
+  border-radius: $secondaryBorderRadius;
+  padding: 25px;
+  margin-bottom: 15px;
+  
+  .answer_parag__ {
+    color: $headingSecondaryColor;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 30px;
+
+    @include sm {
+      font-size: 18px;
+    }
+
+    @include xs {
+      font-size: 15px;
+    }
+
+    &:not(:last-child) {
+      margin-bottom: 15px;
+    }
+  }
+}

@@ -1,0 +1,134 @@
+// .pagination__ {
+//   display: flex;
+//   direction: ltr;
+//   align-items: center;
+//   justify-content: center;
+//   flex-wrap: wrap;
+//   margin-top: 50px;
+
+//   @include sm {
+//     margin-top: 25px;
+//   }
+//   li {
+//   }
+
+//   .item {
+//     font-family: sans-serif;
+//     font-size: 20px;
+//     font-weight: 500;
+//     display: flex;
+//     align-items: center;
+//     justify-content: center;
+//     width: 34px;
+//     height: 34px;
+//     border-radius: 50%;
+//     color: #979797;
+//     text-decoration: none;
+//     transition: 0.5s;
+//     margin: 0 5px;
+
+//     &.active__,
+//     &:hover {
+//       background-color: $primaryColor;
+//       color: #fff;
+//     }
+//   }
+
+//   .arrow__ {
+//     color: $primaryColor;
+//     background-color: rgba($primaryColor, 0.3);
+//     width: 41px;
+//     height: 25px;
+//     border-radius: 25px;
+//     margin: 0 26px;
+
+//     &.next_arrow {
+//       svg {
+//         transform: rotateZ(-90deg);
+//       }
+//     }
+
+//     &.prev_arrow {
+//       svg {
+//         transform: rotateZ(90deg);
+//       }
+//     }
+
+//     &:hover {
+//       color: #fff;
+//       background-color: $primaryColor;
+//     }
+//   }
+// }
+
+.pagination {
+  margin-top: 50px;
+  justify-content: center;
+  align-items: center !important;
+
+  .page-link {
+    background-color: transparent !important;
+    border: 0 !important;
+    padding: 0 !important;
+    font-size: 16px;
+    font-weight: 500;
+    color: #000;
+  }
+
+  .previous_page_item,
+  .next_page_item {
+    .page-link {
+      background-color: transparent !important;
+      border: 0 !important;
+      font-size: 16px;
+      font-weight: 600;
+      color: #000;
+    }
+
+    &.disabled {
+      .page-link {
+        color: $paragraphMainColor !important;
+        font-weight: 400;
+      }
+    }
+  }
+
+  .number_wrapper__ {
+    display: flex;
+    margin: 0 30px;
+    border: 1px solid $primaryColor;
+    border-radius: $secondaryBorderRadius;
+
+    @include xs {
+      flex-wrap: wrap;
+      justify-content: space-between;
+      width: fit-content;
+    }
+
+    .page-item {
+      .page-link {
+        width: 54px;
+        height: 46px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 7px !important;
+
+        &:hover {
+          background-color: rgba($primaryColor, 0.1) !important;
+        }
+      }
+
+      &.active {
+        .page-link {
+          background-color: $primaryColor !important;
+          color: #fff !important;
+
+          &:hover {
+            background-color: rgba($primaryColor, 0.9) !important;
+          }
+        }
+      }
+    }
+  }
+}
