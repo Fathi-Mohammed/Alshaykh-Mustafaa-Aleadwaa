@@ -113,7 +113,9 @@
   margin: 0;
   width: 223px;
   min-width: 223px;
-  max-width: 223px;
+  // max-width: 223px;
+  padding-inline: 20px;
+  max-width: fit-content;
   display: flex;
   align-items: center;
   justify-content: center;
